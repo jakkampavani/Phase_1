@@ -1,0 +1,18 @@
+Êþº¾   = A   !com/pavani/login_validation/Logout   javax/servlet/http/HttpServlet <init> ()V Code
+  	   LineNumberTable LocalVariableTable this #Lcom/ankit/login_validation/Logout; doGet R(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V 
+Exceptions   javax/servlet/ServletException   java/io/IOException  	text/html
+     &javax/servlet/http/HttpServletResponse   setContentType (Ljava/lang/String;)V
+      	getWriter ()Ljava/io/PrintWriter;
+ " $  # %javax/servlet/http/HttpServletRequest % & 
+getSession "()Ljavax/servlet/http/HttpSession;
+ ( *  ) javax/servlet/http/HttpSession +  
+invalidate - !<h2>You are now logged out...<br>
+ / 1  0 java/io/PrintWriter 2   println 4 $<a href='index.html'>Login again</a>  request 'Ljavax/servlet/http/HttpServletRequest; response (Ljavax/servlet/http/HttpServletResponse; out Ljava/io/PrintWriter; 
+SourceFile 
+Logout.java RuntimeVisibleAnnotations %Ljavax/servlet/annotation/WebServlet; value  /logout !                /     *· ±    
+        
+         
+                  ƒ     ',¹  ,¹  N+¹ ! ¹ ' -,¶ .-3¶ .±    
+                 &  
+   *    '  
+     ' 5 6    ' 7 8    9 :   ;    < =     >  ?[ s @
